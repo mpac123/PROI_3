@@ -13,6 +13,16 @@ void Jednoznaczny::Wypisz(std::ostream &ekran)
 		ekran << "->" << nazwa << std::endl;
 }
 
+int Wybor::JakiStopienZagniezdzenia()
+{
+	return stopienZagniezdzenia;
+}
+
+void Wybor::NadajStopienZagniezdzenia(int n)
+{
+	stopienZagniezdzenia=n;
+}
+
 void Podmenu::Wypisz(std::ostream &ekran)
 {
 	ekran << "| " << nazwa << std::endl;

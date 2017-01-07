@@ -7,11 +7,13 @@ class Drzewo
 {
 public:
 	Drzewo(std::string s);
-	vector<Wezel> zbiorWezlow;
-	void StworzWezel(Podmenu& m);
+	~Drzewo();
+	std::vector<Wezel> zbiorWezlow;
+	void StworzWezel(Podmenu* m);
 	void DodajMenu(std::string s, Wezel& w);
 	void DodajWybor(std::string s, Wezel& w);
 	
-}
+	
+};
 
 #endif

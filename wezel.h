@@ -8,14 +8,15 @@ class Wezel
 {
 	friend class Drzewo;
 public:
-	Wezel(Podmenu& m) : klucz(m) {czyUkryty=true;};
-	Podmenu& klucz;
+	Wezel(Podmenu* m) : klucz(m) {};
+	void UsunGalezie();
+	Podmenu* klucz;
 	std::vector<Wybor*> galezie;
 	bool czyUkryty;
-	int stopienZagniezdzenia;
+	
+	Wezel& operator=(const Wezel& w);
 	
 	int JakiStopienZagniezdzenia();
-	void NadajStopienZagniezdzenia(int n);
 	int IleGalezi();
 	void Ukryj() {czyUkryty=true;};
 	void Pokaz() {czyUkryty=false;};

@@ -8,6 +8,9 @@ class Wybor
 {
 	friend class Wezel;
 public:
+	int stopienZagniezdzenia;
+	int JakiStopienZagniezdzenia();
+	void NadajStopienZagniezdzenia(int n);
 	Wybor(std::string s) : nazwa(s) {};
 	virtual ~Wybor() {};
 	std::string nazwa;
@@ -29,7 +32,8 @@ public:
 class Podmenu : public Wybor
 {
 	friend class Wezel;
-public:
+public:	
+	
 	Podmenu(std::string s) : Wybor(s) {};
 	~Podmenu() {};
 	void Wypisz(std::ostream &ekran);

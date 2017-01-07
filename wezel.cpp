@@ -1,13 +1,9 @@
 #include "wezel.h"
 
+
 int Wezel::JakiStopienZagniezdzenia()
 {
-	return stopienZagniezdzenia;
-}
-
-void Wezel::NadajStopienZagniezdzenia(int n)
-{
-	stopienZagniezdzenia=n;
+	return klucz->stopienZagniezdzenia;
 }
 
 int Wezel::IleGalezi()
@@ -18,6 +14,33 @@ int Wezel::IleGalezi()
 void Wezel::DodajWybor(Wybor* w)
 {
 	galezie.push_back(w);
+}
+
+void Wezel::UsunGalezie()
+{
+	if (galezie.size()>0)
+	{
+		std::cout<< "No cos tu usuwam ale najpierw wypisze" << std::endl;
+		for(std::vector<Wybor*>::iterator it=galezie.begin(); it!=galezie.end(); ++it)
+		{
+			std::cout << **it << std::endl;
+			delete *it;
+		}
+	}
+}
+
+Wezel& Wezel::operator=(const Wezel& w)
+{
+	if(&w==this)
+		return *this;
+	
+	for(std::vector<Wybor*>::iterator it=galezie.begin(); it!=galezie.end(); ++it)
+	{
+		delete *it;
+	}
+	
+	klucz=w.klucz;
+	return *this;
 }
 
 std::ostream& operator<<(std::ostream &ekran, const Wezel &w)
