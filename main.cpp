@@ -24,7 +24,7 @@ int main()
 	M.DodajMenu("Do kuchni", M.zbiorWezlow[0]);
 	M.DodajWybor("Lodowki", M.zbiorWezlow[2]);
 	M.DodajMenu("Eleganckie", M.zbiorWezlow[1]);
-	
-	std::cout << M.zbiorWezlow.size() << std::endl;
+	for (size_t i=0; i<M.zbiorWezlow.size(); i++)
+		std::cout << *(M.zbiorWezlow[i].klucz);
 	
 }

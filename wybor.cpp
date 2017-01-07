@@ -7,6 +7,10 @@ void Jednoznaczny::PrzypiszFunkcje(void (*wsk)())
 
 void Jednoznaczny::Wypisz(std::ostream &ekran)
 {
+	for (int i=0; i<stopienZagniezdzenia; i++)
+	{
+		ekran << "  ";
+	}
 	if (wsk_fun==NULL)
 		ekran << "-> " << nazwa << ": funkcja nieaktywna" << std::endl; 
 	else
@@ -25,6 +29,10 @@ void Wybor::NadajStopienZagniezdzenia(int n)
 
 void Podmenu::Wypisz(std::ostream &ekran)
 {
+	for (int i=0; i<stopienZagniezdzenia; i++)
+	{
+		ekran << "  ";
+	}
 	ekran << "| " << nazwa << std::endl;
 }
 

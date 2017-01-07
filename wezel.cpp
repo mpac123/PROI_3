@@ -11,6 +11,18 @@ int Wezel::IleGalezi()
 	return galezie.size();
 }
 
+bool Wezel::empty()
+{
+	if (IleGalezi()==0)
+		return true;
+	return false;
+}
+
+bool Wezel::hidden()
+{
+	return czyUkryty;
+}
+
 void Wezel::DodajWybor(Wybor* w)
 {
 	galezie.push_back(w);
@@ -20,10 +32,8 @@ void Wezel::UsunGalezie()
 {
 	if (galezie.size()>0)
 	{
-		std::cout<< "No cos tu usuwam ale najpierw wypisze" << std::endl;
 		for(std::vector<Wybor*>::iterator it=galezie.begin(); it!=galezie.end(); ++it)
 		{
-			std::cout << **it << std::endl;
 			delete *it;
 		}
 	}

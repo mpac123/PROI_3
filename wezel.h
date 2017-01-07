@@ -18,6 +18,9 @@ public:
 	
 	int JakiStopienZagniezdzenia();
 	int IleGalezi();
+	bool empty();
+	bool hidden();
+	Podmenu* PodajKlucz() {return klucz;};
 	void Ukryj() {czyUkryty=true;};
 	void Pokaz() {czyUkryty=false;};
 	void DodajWybor(Wybor* w);

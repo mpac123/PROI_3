@@ -5,13 +5,14 @@ Drzewo::Drzewo(std::string s)
 	Podmenu* p=new Podmenu(s);
 	p->NadajStopienZagniezdzenia(0);
 	Wezel w(p);
+	w.Pokaz();
 	zbiorWezlow.push_back(w);
 }
 
 Drzewo::~Drzewo()
 {
 	delete zbiorWezlow[0].klucz;
-	for (size_t i=0; i<zbiorWezlow.size(); i++)
+	for (std::list<Wybor*>::iterator i=zbiorWezlow.begin(); i<zbiorWezlow.end(); i++)
 	{
 		zbiorWezlow[i].UsunGalezie();
 	}
@@ -19,13 +20,14 @@ Drzewo::~Drzewo()
 
 void Drzewo::StworzWezel(Podmenu* m)
 {
-	zbiorWezlow.push_back(Wezel(m));
+	Wezel w(m);
+	w.Ukryj();
+	zbiorWezlow.push_back(w);
 }
 
 void Drzewo::DodajMenu(std::string s, Wezel& w)
 {
 	Podmenu* m=new Podmenu(s);
-	std::cout << "Tworze nowe menu: " << *m;
 	m->NadajStopienZagniezdzenia(w.JakiStopienZagniezdzenia()+1);
 	w.DodajWybor(m);
 	StworzWezel(m);
@@ -34,7 +36,7 @@ void Drzewo::DodajMenu(std::string s, Wezel& w)
 void Drzewo::DodajWybor(std::string s, Wezel& w)
 {
 	Jednoznaczny* j=new Jednoznaczny(s);
-	j->NadajStopienZagniezdzenia(-1);
+	j->NadajStopienZagniezdzenia(w.JakiStopienZagniezdzenia()+1);
 	w.DodajWybor(j);
 }
 
