@@ -1,6 +1,6 @@
 #include "wybor.h"
-#include "wezel.h"
-#include "drzewo.h"
+#include "kolekcja.h"
+#include "obsluga.h"
 
 void fun()
 {
@@ -9,22 +9,14 @@ void fun()
 
 int main()
 {
-	/*Podmenu Pierwsze("Alfabet");
-	Jednoznaczny Jej("Wybor");
-	Jej.PrzypiszFunkcje(fun);
-	
-	Wezel W(Pierwsze);
-	Podmenu D("HAHA");
-	W.DodajWybor(&Jej);
-	W.DodajWybor(&D);
-	std::cout << W << std::endl;*/
-	
-	Drzewo M("Meble");
-	M.DodajMenu("Do salonu", M.zbiorWezlow[0]);
-	M.DodajMenu("Do kuchni", M.zbiorWezlow[0]);
-	M.DodajWybor("Lodowki", M.zbiorWezlow[2]);
-	M.DodajMenu("Eleganckie", M.zbiorWezlow[1]);
-	for (size_t i=0; i<M.zbiorWezlow.size(); i++)
-		std::cout << *(M.zbiorWezlow[i].klucz);
+	Obsluga M("Meble");
+	M.DodajMenu("Do pokoju");
+	M.Wypisz();
+	M.DodajMenu("Do lazienki");
+	M.Wypisz();
+	M.Wstecz();
+	M.Wypisz();
+	M.DodajMenu("Do kuchni");
+	M.Wypisz();
 	
 }

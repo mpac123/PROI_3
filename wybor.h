@@ -6,24 +6,30 @@
 
 class Wybor
 {
-	friend class Wezel;
+	friend class Kolekcja;
 public:
+	Wybor(std::string s, bool cM) : nazwa(s), czyMenu(cM) {};
+	virtual ~Wybor() {};
+
+protected:
+	std::string nazwa;
+	bool czyMenu;
 	int stopienZagniezdzenia;
+	
 	int JakiStopienZagniezdzenia();
 	void NadajStopienZagniezdzenia(int n);
-	Wybor(std::string s) : nazwa(s) {};
-	virtual ~Wybor() {};
-	std::string nazwa;
+	
 	friend std::ostream& operator<<(std::ostream &ekran, Wybor &w);
 	virtual void Wypisz(std::ostream &ekran) {};
 };
 
 class Jednoznaczny : public Wybor
 {
-	friend class Wezel;
+	friend class Kolekcja;
 public:
-	Jednoznaczny(std::string s) : Wybor(s) {wsk_fun=NULL;};
+	Jednoznaczny(std::string s, bool cM) : Wybor(s,cM) {wsk_fun=NULL;};
 	~Jednoznaczny() {};
+private:
 	void (*wsk_fun)();
 	void PrzypiszFunkcje(void (*wsk)());
 	void Wypisz(std::ostream &ekran);
@@ -31,11 +37,17 @@ public:
 
 class Podmenu : public Wybor
 {
-	friend class Wezel;
+	friend class Kolekcja;
 public:	
-	
-	Podmenu(std::string s) : Wybor(s) {};
+	Podmenu(std::string s, bool cM) : Wybor(s,cM) {};
 	~Podmenu() {};
+private:
+	bool czyUkryty;
+	bool czyPusty;
+	void Ukryj() {czyUkryty=true;};
+	void Pokaz() {czyUkryty=false;};
+	bool empty() {return czyPusty;};
+	bool hidden() {return czyUkryty;};
 	void Wypisz(std::ostream &ekran);
 };
 

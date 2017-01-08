@@ -12,9 +12,9 @@ void Jednoznaczny::Wypisz(std::ostream &ekran)
 		ekran << "  ";
 	}
 	if (wsk_fun==NULL)
-		ekran << "-> " << nazwa << ": funkcja nieaktywna" << std::endl; 
+		ekran << "-> " << nazwa << ": funkcja nieaktywna"; 
 	else
-		ekran << "->" << nazwa << std::endl;
+		ekran << "->" << nazwa;
 }
 
 int Wybor::JakiStopienZagniezdzenia()
@@ -33,7 +33,7 @@ void Podmenu::Wypisz(std::ostream &ekran)
 	{
 		ekran << "  ";
 	}
-	ekran << "| " << nazwa << std::endl;
+	ekran << "| " << nazwa;
 }
 
 std::ostream& operator<<(std::ostream &ekran, Wybor &p)
