@@ -23,6 +23,7 @@ void Kolekcja::DodajMenu(std::string s, kursor& it)
 	Podmenu* p=new Podmenu(s,1);
 	p->czyPusty=1;
 	p->Pokaz();
+	std::cout << "DodajMenu dziala\n" << (*it)->JakiStopienZagniezdzenia() << std::endl;
 	p->NadajStopienZagniezdzenia((*it)->JakiStopienZagniezdzenia()+1);
 	it=ZbiorWyborow.insert(it++,p);
 }
