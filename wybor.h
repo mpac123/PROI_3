@@ -10,13 +10,13 @@ class Wybor
 public:
 	Wybor(std::string s, bool cM) : nazwa(s), czyMenu(cM) {};
 	virtual ~Wybor() {};
-
+		int JakiStopienZagniezdzenia();
 protected:
 	std::string nazwa;
 	bool czyMenu;
 	int stopienZagniezdzenia;
-	
-	int JakiStopienZagniezdzenia();
+
+
 	void NadajStopienZagniezdzenia(int n);
 	
 	friend std::ostream& operator<<(std::ostream &ekran, Wybor &w);
@@ -26,6 +26,7 @@ protected:
 class Jednoznaczny : public Wybor
 {
 	friend class Kolekcja;
+	friend class Obsluga;
 public:
 	Jednoznaczny(std::string s, bool cM) : Wybor(s,cM) {wsk_fun=NULL;};
 	~Jednoznaczny() {};

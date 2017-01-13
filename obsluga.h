@@ -10,6 +10,8 @@ class Obsluga
 	kursor Kursor;
 	void DodajMenu(std::string s);
 	void DodajWyborJedn(std::string s);
+	void PrzypiszFunkcje(int n);
+	void Usun();
 	void Dalej();
 	void Wstecz();
 	void Wypisz();
