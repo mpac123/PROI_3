@@ -14,7 +14,11 @@ class Obsluga
 	void Usun();
 	void Dalej();
 	void Wstecz();
-	void Wypisz();
+	void Wypisz(std::ostream &ekran);
+	void Zwin();
+	void Rozwin();
+	void Wykonaj();
+	friend std::ostream& operator<<(std::ostream &ekran, Obsluga &m);
 	
 };
 

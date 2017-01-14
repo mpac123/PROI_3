@@ -34,6 +34,10 @@ void Podmenu::Wypisz(std::ostream &ekran)
 		ekran << "  ";
 	}
 	ekran << "| " << nazwa << " ";
+	if (!empty())
+	{
+		ekran << "|";
+	}
 }
 
 std::ostream& operator<<(std::ostream &ekran, Wybor &p)

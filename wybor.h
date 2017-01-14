@@ -7,14 +7,18 @@
 class Wybor
 {
 	friend class Kolekcja;
+	friend class Obsluga;
 public:
-	Wybor(std::string s, bool cM) : nazwa(s), czyMenu(cM) {};
+	Wybor(std::string s) : nazwa(s) {};
 	virtual ~Wybor() {};
 		int JakiStopienZagniezdzenia();
 protected:
 	std::string nazwa;
-	bool czyMenu;
 	int stopienZagniezdzenia;
+	bool czyUkryty;
+	void Ukryj() {czyUkryty=true;};
+	void Pokaz() {czyUkryty=false;};
+	bool hidden() {return czyUkryty;};
 
 
 	void NadajStopienZagniezdzenia(int n);
@@ -28,7 +32,7 @@ class Jednoznaczny : public Wybor
 	friend class Kolekcja;
 	friend class Obsluga;
 public:
-	Jednoznaczny(std::string s, bool cM) : Wybor(s,cM) {wsk_fun=NULL;};
+	Jednoznaczny(std::string s) : Wybor(s) {wsk_fun=NULL;};
 	~Jednoznaczny() {};
 private:
 	void (*wsk_fun)();
@@ -39,16 +43,14 @@ private:
 class Podmenu : public Wybor
 {
 	friend class Kolekcja;
+	friend class Obsluga;
 public:	
-	Podmenu(std::string s, bool cM) : Wybor(s,cM) {};
+	Podmenu(std::string s) : Wybor(s) {};
 	~Podmenu() {};
 private:
-	bool czyUkryty;
+	
 	bool czyPusty;
-	void Ukryj() {czyUkryty=true;};
-	void Pokaz() {czyUkryty=false;};
 	bool empty() {return czyPusty;};
-	bool hidden() {return czyUkryty;};
 	void Wypisz(std::ostream &ekran);
 };
 

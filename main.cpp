@@ -11,18 +11,15 @@ int main()
 	Obsluga M("Meble");
 	M.DodajMenu("Do pokoju");
 	M.Wstecz();
-	//M.Wypisz();
 	M.DodajMenu("Do lazienki");
 	M.Wstecz();
-	//M.Wypisz();
-	//M.Wstecz();
-	//M.Wypisz();
 	M.DodajMenu("Do kuchni");
 	M.DodajWyborJedn("Blaty kuchenne");
-	//M.Wstecz();
-	M.PrzypiszFunkcje(5);
-	
-	//M.Usun();
-	M.Wypisz();
+	M.Rozwin();
+	M.Dalej();
+	M.Rozwin();
+	M.Wstecz();
+	M.Wykonaj();
+	std::cout << M;
 	
 }
