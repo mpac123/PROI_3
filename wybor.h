@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+#include <ncurses.h>
 
 class Wybor
 {
@@ -25,6 +26,7 @@ protected:
 	
 	friend std::ostream& operator<<(std::ostream &ekran, Wybor &w);
 	virtual void Wypisz(std::ostream &ekran) {};
+	virtual void Drukuj() {};
 };
 
 class Jednoznaczny : public Wybor
@@ -38,6 +40,7 @@ private:
 	void (*wsk_fun)();
 	void PrzypiszFunkcje(void (*wsk)());
 	void Wypisz(std::ostream &ekran);
+	void Drukuj();
 };
 
 class Podmenu : public Wybor
@@ -52,6 +55,7 @@ private:
 	bool czyPusty;
 	bool empty() {return czyPusty;};
 	void Wypisz(std::ostream &ekran);
+	void Drukuj();
 };
 
 #endif

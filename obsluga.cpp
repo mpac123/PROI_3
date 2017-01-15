@@ -212,3 +212,21 @@ void Obsluga::Wykonaj()
 		std::cout << s << std::endl;
 	}
 }
+
+void Obsluga::Drukuj()
+{
+	move(0,0);
+	for (kursor it=Menu.ZbiorWyborow.begin(); it!=Menu.ZbiorWyborow.end(); it++)
+	{
+		if(!(*it)->hidden())
+		{
+			if (Kursor==it)
+				attron(A_REVERSE);
+			(*it)->Drukuj();
+			if (Kursor==it)
+				attroff(A_REVERSE);
+			printw("\n");
+		}
+	}
+	printw("\n");
+}

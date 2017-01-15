@@ -17,6 +17,18 @@ void Jednoznaczny::Wypisz(std::ostream &ekran)
 		ekran << "->" << nazwa;
 }
 
+void Jednoznaczny::Drukuj()
+{
+	for (int i=0; i<stopienZagniezdzenia; i++)
+	{
+		printw(" ");
+	}
+	if (wsk_fun==NULL)
+		printw("->%s: funkcja nieaktywna",nazwa.c_str());
+	else
+		printw("->%s",nazwa.c_str());
+}
+
 int Wybor::JakiStopienZagniezdzenia()
 {
 	return stopienZagniezdzenia;
@@ -38,6 +50,21 @@ void Podmenu::Wypisz(std::ostream &ekran)
 	{
 		ekran << "|";
 	}
+}
+
+void Podmenu::Drukuj()
+{
+	for (int i=0; i<stopienZagniezdzenia; i++)
+	{
+		printw(" ");
+	}
+	attron(A_BOLD);
+	printw("| %s",nazwa.c_str());
+	if (!empty())
+	{
+		printw(" |");
+	}
+	attroff(A_BOLD);
 }
 
 std::ostream& operator<<(std::ostream &ekran, Wybor &p)

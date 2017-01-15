@@ -19,6 +19,7 @@ class Obsluga
 	void Rozwin();
 	void Wykonaj();
 	friend std::ostream& operator<<(std::ostream &ekran, Obsluga &m);
+	void Drukuj();
 	
 };
 

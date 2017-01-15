@@ -1,6 +1,8 @@
 #include "wybor.h"
 #include "kolekcja.h"
 #include "obsluga.h"
+#include "interfejs.h"
+#include <ncurses.h>
 void fun1();
 void fun2();
 void fun3();
@@ -8,7 +10,7 @@ void fun4();
 void fun5();
 int main()
 {
-	Obsluga M("Meble");
+	/*Obsluga M("Meble");
 	M.DodajMenu("Do pokoju");
 	M.Wstecz();
 	M.DodajMenu("Do lazienki");
@@ -20,6 +22,9 @@ int main()
 	M.Rozwin();
 	M.Wstecz();
 	M.Wykonaj();
-	std::cout << M;
+	std::cout << M;*/
+	Interfejs lol;
+	lol.Program();
+	return 0;
 	
 }
