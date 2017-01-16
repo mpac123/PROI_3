@@ -213,7 +213,7 @@ void Obsluga::Wykonaj()
 	}
 }
 
-void Obsluga::Drukuj()
+/*void Obsluga::Drukuj()
 {
 	move(0,0);
 	for (kursor it=Menu.ZbiorWyborow.begin(); it!=Menu.ZbiorWyborow.end(); it++)
@@ -230,3 +230,4 @@ void Obsluga::Drukuj()
 	}
 	printw("\n");
 }
+*/

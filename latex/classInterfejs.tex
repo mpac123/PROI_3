@@ -1,0 +1,40 @@
+\hypertarget{classInterfejs}{\section{Dokumentacja klasy Interfejs}
+\label{classInterfejs}\index{Interfejs@{Interfejs}}
+}
+
+
+{\ttfamily \#include $<$interfejs.\-h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classInterfejs_ab016a2fdc6ba2553378167d6a07f8ea3}{Start} ()
+\item 
+void \hyperlink{classInterfejs_a46d175ac6f4e02e5e60fea8bb54c98b7}{Program} (\hyperlink{classObsluga}{Obsluga} \&M)
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezentująca interfejs użytkownika. Menu wyświetlane jest w terminalu w następujący umówny sposób\-:
+\begin{DoxyItemize}
+\item Poziom zagnieżdżenia reprezentowany jest ilością spacji
+\item Pozycja Kursora pokazywana jest symbolem $\ast$$\ast$$\ast$
+\item Lista dostępnych poleceń wyświetlana jest bezpośrednio pod Menu. 
+\end{DoxyItemize}
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{classInterfejs_a46d175ac6f4e02e5e60fea8bb54c98b7}{\index{Interfejs@{Interfejs}!Program@{Program}}
+\index{Program@{Program}!Interfejs@{Interfejs}}
+\subsubsection[{Program}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Program (
+\begin{DoxyParamCaption}
+\item[{{\bf Obsluga} \&}]{M}
+\end{DoxyParamCaption}
+)}}\label{classInterfejs_a46d175ac6f4e02e5e60fea8bb54c98b7}
+Metoda przetwarzająca polecenia uzytkownika. Może być wywołana dla stworzonego wcześniej obiektu typu \hyperlink{classObsluga}{Obsluga}. \hypertarget{classInterfejs_ab016a2fdc6ba2553378167d6a07f8ea3}{\index{Interfejs@{Interfejs}!Start@{Start}}
+\index{Start@{Start}!Interfejs@{Interfejs}}
+\subsubsection[{Start}]{\setlength{\rightskip}{0pt plus 5cm}void Interfejs\-::\-Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classInterfejs_ab016a2fdc6ba2553378167d6a07f8ea3}
+Funkcja umożliwiająca użytkownikowi stworzenie nowego Menu od zera. Pobiera z klawiatury informacje o \hyperlink{classPodmenu}{Podmenu} o stopniu zagnieżdżenia 0, niezbędnym do utworzenia nowego obiektu typu \hyperlink{classObsluga}{Obsluga}, a następnie wywołuje funkcję \hyperlink{classInterfejs_a46d175ac6f4e02e5e60fea8bb54c98b7}{Program(\-Obsluga\& M)}. 

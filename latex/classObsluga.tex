@@ -1,0 +1,136 @@
+\hypertarget{classObsluga}{\section{Dokumentacja klasy Obsluga}
+\label{classObsluga}\index{Obsluga@{Obsluga}}
+}
+
+
+{\ttfamily \#include $<$obsluga.\-h$>$}
+
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classObsluga_a5d6c171d6a9b4f6f9caa444b09fcb460}{{\bfseries Obsluga} (std\-::string s)}\label{classObsluga_a5d6c171d6a9b4f6f9caa444b09fcb460}
+
+\item 
+void \hyperlink{classObsluga_aaf91f84ea408e2ee478009ff28d0719c}{Dodaj\-Menu} (std\-::string s)
+\item 
+void \hyperlink{classObsluga_a141f1c29476498fecf4c74983c60f107}{Dodaj\-Wybor\-Jedn} (std\-::string s)
+\item 
+void \hyperlink{classObsluga_a79ac7b11058423a625c971688d012a5c}{Przypisz\-Funkcje} (int n)
+\item 
+void \hyperlink{classObsluga_af4498067cfb12688c9b395a9ec58cd4a}{Usun} ()
+\item 
+void \hyperlink{classObsluga_a5567d2685b8ca89fe1d6593f0826a653}{Dalej} ()
+\item 
+void \hyperlink{classObsluga_a36f1c6f4841b40c6d44fd1fc3fd2449b}{Wstecz} ()
+\item 
+void \hyperlink{classObsluga_a5c3d436c5b2daa909d9edf6a4e288818}{Wypisz} (std\-::ostream \&ekran)
+\item 
+void \hyperlink{classObsluga_add7a400f68afe5e0c049855ed428fd3a}{Zwin} ()
+\item 
+void \hyperlink{classObsluga_a3b625d79bab85d07a4da24bc105e312d}{Rozwin} ()
+\item 
+void \hyperlink{classObsluga_aed45a6c9be358bcbce191617e6e04be7}{Wykonaj} ()
+\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classObsluga_a29bee9078fbc123e023d6d8cb376928d}{class {\bfseries Interfejs}}\label{classObsluga_a29bee9078fbc123e023d6d8cb376928d}
+
+\item 
+\hypertarget{classObsluga_aeac69cdc1820ab17cd012468f3f0a85c}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&ekran, \hyperlink{classObsluga}{Obsluga} \&m)}\label{classObsluga_aeac69cdc1820ab17cd012468f3f0a85c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa obsługująca obiekt klasy \hyperlink{classKolekcja}{Kolekcja}. Potrafi modyfikować obiekty klasy Wybór, przechowywane przez atrybut klasy \hyperlink{classKolekcja}{Kolekcja}. Umożliwia wykonywanie operacji na Kolekcji -\/ dodawanie Wyborów, zwijanie i rozwijanie \hyperlink{classPodmenu}{Podmenu} oraz swobodne poruszanie się po kolejnych Wyborach, z uwzględnieniem omijania Wyborów ukrytych.
+
+Klasa ma charakter uniwersalny, nie narzuca żadnego konkretnego interfejsu użytkownika. Z powodzeniem jej metody mogą być wykorzystywane przy tworzeniu różnych interfejsów. 
+
+\subsection{Dokumentacja funkcji składowych}
+\hypertarget{classObsluga_a5567d2685b8ca89fe1d6593f0826a653}{\index{Obsluga@{Obsluga}!Dalej@{Dalej}}
+\index{Dalej@{Dalej}!Obsluga@{Obsluga}}
+\subsubsection[{Dalej}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Dalej (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_a5567d2685b8ca89fe1d6593f0826a653}
+Przesuwa kursor na kolejny element listy Zbior\-Wyborow. Uwzględnia fakt, że część elementów może być ukryta i pomija je. Gdy Kursor pokazuje na ostatni element, przesuwa go na początek. \hypertarget{classObsluga_aaf91f84ea408e2ee478009ff28d0719c}{\index{Obsluga@{Obsluga}!Dodaj\-Menu@{Dodaj\-Menu}}
+\index{Dodaj\-Menu@{Dodaj\-Menu}!Obsluga@{Obsluga}}
+\subsubsection[{Dodaj\-Menu}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Dodaj\-Menu (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{s}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_aaf91f84ea408e2ee478009ff28d0719c}
+Metoda tworząca nowy obiekt typu \hyperlink{classPodmenu}{Podmenu} i dodająca go do listy Zbior\-Wyborow zaraz za elementej tej listy pokazywanym przez atrybut Kursor. 
+\begin{DoxyParams}{Parametry}
+{\em s} & nazwa obiektu typu \hyperlink{classPodmenu}{Podmenu}\\
+\hline
+\end{DoxyParams}
+\hypertarget{classObsluga_a141f1c29476498fecf4c74983c60f107}{\index{Obsluga@{Obsluga}!Dodaj\-Wybor\-Jedn@{Dodaj\-Wybor\-Jedn}}
+\index{Dodaj\-Wybor\-Jedn@{Dodaj\-Wybor\-Jedn}!Obsluga@{Obsluga}}
+\subsubsection[{Dodaj\-Wybor\-Jedn}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Dodaj\-Wybor\-Jedn (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{s}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_a141f1c29476498fecf4c74983c60f107}
+Metoda tworząca nowy obiekt typu \hyperlink{classJednoznaczny}{Jednoznaczny} i dodająca go do listy Zbior\-Wyborow zaraz za elementej tej listy pokazywanym przez atrybut Kursor. 
+\begin{DoxyParams}{Parametry}
+{\em s} & nazwa obiektu typu \hyperlink{classJednoznaczny}{Jednoznaczny}\\
+\hline
+\end{DoxyParams}
+\hypertarget{classObsluga_a79ac7b11058423a625c971688d012a5c}{\index{Obsluga@{Obsluga}!Przypisz\-Funkcje@{Przypisz\-Funkcje}}
+\index{Przypisz\-Funkcje@{Przypisz\-Funkcje}!Obsluga@{Obsluga}}
+\subsubsection[{Przypisz\-Funkcje}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Przypisz\-Funkcje (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_a79ac7b11058423a625c971688d012a5c}
+Przypisuje do odpowiedniego pola obiektu typu \hyperlink{classJednoznaczny}{Jednoznaczny} wskaźnik na funkcję, którą ma wywoływać ten Wybór. 
+\begin{DoxyParams}{Parametry}
+{\em n} & numer funkcji, która ma zostać przypisana Wyborowi\\
+\hline
+\end{DoxyParams}
+\hypertarget{classObsluga_a3b625d79bab85d07a4da24bc105e312d}{\index{Obsluga@{Obsluga}!Rozwin@{Rozwin}}
+\index{Rozwin@{Rozwin}!Obsluga@{Obsluga}}
+\subsubsection[{Rozwin}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Rozwin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_a3b625d79bab85d07a4da24bc105e312d}
+Metoda pokazuje wszystkie elementy Kolekcji zagnieżdżone w \hyperlink{classPodmenu}{Podmenu} (jeżeli były wcześniej ukryte). Jeżeli \hyperlink{classPodmenu}{Podmenu} nie jest zwinięte, zgłasza wyjątek. Jeżeli wywołane dla typu innego niż \hyperlink{classPodmenu}{Podmenu}, zgłasza wyjątek. \hypertarget{classObsluga_af4498067cfb12688c9b395a9ec58cd4a}{\index{Obsluga@{Obsluga}!Usun@{Usun}}
+\index{Usun@{Usun}!Obsluga@{Obsluga}}
+\subsubsection[{Usun}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Usun (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_af4498067cfb12688c9b395a9ec58cd4a}
+Usuwa Wybór, na który aktualnie wskazuje Kursor wraz ze wszystkimi Wyborami zagnieżdżonymi. Kursor na koniec jest ustawiony na pierwszym kolejnym niezagnieżdżonym obiekcie. \hypertarget{classObsluga_a36f1c6f4841b40c6d44fd1fc3fd2449b}{\index{Obsluga@{Obsluga}!Wstecz@{Wstecz}}
+\index{Wstecz@{Wstecz}!Obsluga@{Obsluga}}
+\subsubsection[{Wstecz}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Wstecz (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_a36f1c6f4841b40c6d44fd1fc3fd2449b}
+Przesuwa kursor na poprzedni element listy Zbior\-Wyborow. Uwzględnia fakt, że część elementów może być ukryta i pomija je. Gdy Kursor pokazuje na pierwszy element, przesuwa go na koniec. \hypertarget{classObsluga_aed45a6c9be358bcbce191617e6e04be7}{\index{Obsluga@{Obsluga}!Wykonaj@{Wykonaj}}
+\index{Wykonaj@{Wykonaj}!Obsluga@{Obsluga}}
+\subsubsection[{Wykonaj}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Wykonaj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_aed45a6c9be358bcbce191617e6e04be7}
+Metoda wywoływana dla obiektu klasy \hyperlink{classJednoznaczny}{Jednoznaczny} (dla każdego innego zgłasza wyjątek). Wywołuje funkcję przypisaną do Wyboru Jednoznacznego pokazywanego przez Kursor. Jeżeli funkcja nie została jeszcze przypisana, zgłasza wyjątek. \hypertarget{classObsluga_a5c3d436c5b2daa909d9edf6a4e288818}{\index{Obsluga@{Obsluga}!Wypisz@{Wypisz}}
+\index{Wypisz@{Wypisz}!Obsluga@{Obsluga}}
+\subsubsection[{Wypisz}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Wypisz (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{ekran}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_a5c3d436c5b2daa909d9edf6a4e288818}
+Metoda wykorzystywana przez przeładowany operator$<$$<$ \hypertarget{classObsluga_add7a400f68afe5e0c049855ed428fd3a}{\index{Obsluga@{Obsluga}!Zwin@{Zwin}}
+\index{Zwin@{Zwin}!Obsluga@{Obsluga}}
+\subsubsection[{Zwin}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Zwin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classObsluga_add7a400f68afe5e0c049855ed428fd3a}
+Metoda ukrywa wszystkie elementy Kolekcji zagnieżdżone w \hyperlink{classPodmenu}{Podmenu}. Jeżeli wywołane dla typu innego niż \hyperlink{classPodmenu}{Podmenu}, zgłasza wyjątek. 

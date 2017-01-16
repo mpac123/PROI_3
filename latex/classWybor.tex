@@ -1,0 +1,73 @@
+\hypertarget{classWybor}{\section{Dokumentacja klasy Wybor}
+\label{classWybor}\index{Wybor@{Wybor}}
+}
+
+
+{\ttfamily \#include $<$wybor.\-h$>$}
+
+Diagram dziedziczenia dla Wybor\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classWybor}
+\end{center}
+\end{figure}
+\subsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classWybor_a3e0c715881bdeeec7bbcb84531e3b0e5}{{\bfseries Wybor} (std\-::string s)}\label{classWybor_a3e0c715881bdeeec7bbcb84531e3b0e5}
+
+\end{DoxyCompactItemize}
+\subsection*{Metody chronione}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classWybor_a78db78719c9fc86ad4c3a213397baf54}{int \hyperlink{classWybor_a78db78719c9fc86ad4c3a213397baf54}{Jaki\-Stopien\-Zagniezdzenia} ()}\label{classWybor_a78db78719c9fc86ad4c3a213397baf54}
+
+\begin{DoxyCompactList}\small\item\em Funkcja zwracająca wartość całkowitą, oznaczającą stopień zagnieżdżenia obiektu. \end{DoxyCompactList}\item 
+\hypertarget{classWybor_a67fe9d804ece1158b6b45d42875b05af}{void \hyperlink{classWybor_a67fe9d804ece1158b6b45d42875b05af}{Ukryj} ()}\label{classWybor_a67fe9d804ece1158b6b45d42875b05af}
+
+\begin{DoxyCompactList}\small\item\em Zmienna logiczna czy\-Ukryty zmienia wartość na \char`\"{}prawda\char`\"{}. \end{DoxyCompactList}\item 
+\hypertarget{classWybor_a22198d1190c37209a2db625a3e3b0fef}{void \hyperlink{classWybor_a22198d1190c37209a2db625a3e3b0fef}{Pokaz} ()}\label{classWybor_a22198d1190c37209a2db625a3e3b0fef}
+
+\begin{DoxyCompactList}\small\item\em Zmienna logiczna czy\-Ukryty zmienia wartość na \char`\"{}fałsz\char`\"{}. \end{DoxyCompactList}\item 
+\hypertarget{classWybor_a76709c72cad50840901fcdb8ee365f1f}{bool \hyperlink{classWybor_a76709c72cad50840901fcdb8ee365f1f}{hidden} ()}\label{classWybor_a76709c72cad50840901fcdb8ee365f1f}
+
+\begin{DoxyCompactList}\small\item\em Metoda zwracająca wartość zmiennej czy\-Ukryty. \end{DoxyCompactList}\item 
+\hypertarget{classWybor_a3257df3c35728ec264a51dce3ac28f55}{void \hyperlink{classWybor_a3257df3c35728ec264a51dce3ac28f55}{Nadaj\-Stopien\-Zagniezdzenia} (int n)}\label{classWybor_a3257df3c35728ec264a51dce3ac28f55}
+
+\begin{DoxyCompactList}\small\item\em Metoda modyfikująca atrybut stopien\-Zagniezdzenia. \end{DoxyCompactList}\item 
+\hypertarget{classWybor_a42cb8cae1bafe052a3b96eddee87de62}{virtual void \hyperlink{classWybor_a42cb8cae1bafe052a3b96eddee87de62}{Wypisz} (std\-::ostream \&ekran)}\label{classWybor_a42cb8cae1bafe052a3b96eddee87de62}
+
+\begin{DoxyCompactList}\small\item\em Metoda używana przez zaprzyjaźnioną funkcję przeładowującą operator$<$$<$. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Atrybuty chronione}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classWybor_ada1632e8ce78ba40ea8f491f2db66b77}{std\-::string {\bfseries nazwa}}\label{classWybor_ada1632e8ce78ba40ea8f491f2db66b77}
+
+\item 
+int \hyperlink{classWybor_aee3503d5cc003f8dd73547fe4e58cef9}{stopien\-Zagniezdzenia}
+\item 
+\hypertarget{classWybor_a946727299ecc881dc13ac30e1d9f33d8}{bool \hyperlink{classWybor_a946727299ecc881dc13ac30e1d9f33d8}{czy\-Ukryty}}\label{classWybor_a946727299ecc881dc13ac30e1d9f33d8}
+
+\begin{DoxyCompactList}\small\item\em Zmienna logiczna\-: prawdziwa gdy wybór jest ukryty, np. na skutek zwinięcia \hyperlink{classPodmenu}{Podmenu}, w którym obiekt był zagnieżdżony. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Przyjaciele}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classWybor_acbfbc86fbec88d567dc6313b7419d6fa}{class {\bfseries Kolekcja}}\label{classWybor_acbfbc86fbec88d567dc6313b7419d6fa}
+
+\item 
+\hypertarget{classWybor_aaba4100c363553c323b55344e224e15d}{class \hyperlink{classWybor_aaba4100c363553c323b55344e224e15d}{Obsluga}}\label{classWybor_aaba4100c363553c323b55344e224e15d}
+
+\begin{DoxyCompactList}\small\item\em Klasa bezpośrednio obsługująca obiekty klasy Wybór. \end{DoxyCompactList}\item 
+\hypertarget{classWybor_a1181e1d648ce67ab4f131a6f1639c6fd}{std\-::ostream \& {\bfseries operator$<$$<$} (std\-::ostream \&ekran, \hyperlink{classWybor}{Wybor} \&w)}\label{classWybor_a1181e1d648ce67ab4f131a6f1639c6fd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Opis szczegółowy}
+Klasa reprezentująca pojedynczy wybór. Z jej obiektów korzysta zaprzyjaźniona klasa \hyperlink{classKolekcja}{Kolekcja}. Jest to klasa najbardziej podrzędna w strukturze klas programu. 
+
+\subsection{Dokumentacja atrybutów składowych}
+\hypertarget{classWybor_aee3503d5cc003f8dd73547fe4e58cef9}{\index{Wybor@{Wybor}!stopien\-Zagniezdzenia@{stopien\-Zagniezdzenia}}
+\index{stopien\-Zagniezdzenia@{stopien\-Zagniezdzenia}!Wybor@{Wybor}}
+\subsubsection[{stopien\-Zagniezdzenia}]{\setlength{\rightskip}{0pt plus 5cm}int Wybor\-::stopien\-Zagniezdzenia\hspace{0.3cm}{\ttfamily [protected]}}}\label{classWybor_aee3503d5cc003f8dd73547fe4e58cef9}
+Informacja o stopniu zagnieżdżenia danego wyboru wewnątrz Kolekcji Wyborów. Zwracana przez metodę int \hyperlink{classWybor_a78db78719c9fc86ad4c3a213397baf54}{Jaki\-Stopien\-Zagniezdzenia()}. Modyfikowana z zewnątrz klasy poprzez metodę void \hyperlink{classWybor_a3257df3c35728ec264a51dce3ac28f55}{Nadaj\-Stopien\-Zagniezdzenia(int n)}. 

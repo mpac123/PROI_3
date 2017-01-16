@@ -1,0 +1,36 @@
+\section*{Polecenie}
+
+Menu programu okienkowego jest kolekcją wyborów. Każdy z wyborów jest albo jednoznaczny albo wskazuje na inne menu. Oprogramować bibliotekę klas reprezentujących menu. Biblioteka ma umożliwiać następujące czynności\-:
+\begin{DoxyItemize}
+\item Dodawanie/usuwanie wyborów jednoznacznych do/z (pod)menu.
+\item Dodawanie/usuwanie podmenu do/z (pod)menu.
+\item Przypisywanie wyborów jednoznacznych do pewnych funkcji.
+\item Rozwijanie/zwijanie podmenu.
+\item Dokonywanie wyborów jednoznacznych. Napisać program, który wszystkie powyższe funkcjonalności udostępnia poprzez polecenia wydawane z klawiatury. Przyjąć, że za wyborami jednoznacznymi może kryć się stały zbiór funkcji wypisujący na konsoli komunikaty typu “\-Zadziałała funkcja nr 14”.
+\end{DoxyItemize}
+
+\section*{Założenia}
+
+
+\begin{DoxyEnumerate}
+\item Menu zawsze musi się składać z conajmniej jednego Wyboru typu \hyperlink{classPodmenu}{Podmenu}. Nie można usunąć takiego \hyperlink{classPodmenu}{Podmenu}.
+\item Usunięcie \hyperlink{classPodmenu}{Podmenu} oznacza usunięcie razem z nim wszystkich zagnieżdżonych w nim Wyborów.
+\item Po usunięciu elementu (elementów) Menu kursor wskazuje na następny obiekt.
+\item Jeżeli \hyperlink{classPodmenu}{Podmenu} jest zwinięte, nie ma możliwości przejścia kursorem do któregokolwiek z zagnieżdżonych w nim Wyborów. W tym celu należy je najpierw rozwinąć.
+\end{DoxyEnumerate}
+
+\section*{Struktura klas reprezentujących Menu}
+
+Lista klas w kolejności nadrzędności, tzn. klasa wymieniona jako pierwsza nie korzysta z żadnej z innych klas, jest za to wykorzystywana przez klasy nadrzędne, w szczególności przez klasę bezpośrednio nadrzędną, tzn. klasę o numerze 2.
+
+
+\begin{DoxyEnumerate}
+\item \hyperlink{classWybor}{Wybor}
+\begin{DoxyItemize}
+\item \hyperlink{classJednoznaczny}{Jednoznaczny}
+\item \hyperlink{classPodmenu}{Podmenu}
+\end{DoxyItemize}
+\item \hyperlink{classKolekcja}{Kolekcja}
+\item \hyperlink{classObsluga}{Obsluga}
+\item \hyperlink{classInterfejs}{Interfejs} 
+\end{DoxyEnumerate}
