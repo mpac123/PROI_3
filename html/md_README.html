@@ -63,7 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,11 +91,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <ol type="1">
 <li>Menu zawsze musi się składać z conajmniej jednego Wyboru typu <a class="el" href="classPodmenu.html">Podmenu</a>. Nie można usunąć takiego <a class="el" href="classPodmenu.html">Podmenu</a>.</li>
 <li>Usunięcie <a class="el" href="classPodmenu.html">Podmenu</a> oznacza usunięcie razem z nim wszystkich zagnieżdżonych w nim Wyborów.</li>
-<li>Po usunięciu elementu (elementów) Menu kursor wskazuje na następny obiekt.</li>
+<li>Po usunięciu elementu (elementów) Menu kursor wskazuje na poprzedni obiekt.</li>
+<li>Po dodaniu nowego zagnieżdżonego Wyboru, kursos jest ustawiony na tym nowododanym Wyborze.</li>
 <li>Jeżeli <a class="el" href="classPodmenu.html">Podmenu</a> jest zwinięte, nie ma możliwości przejścia kursorem do któregokolwiek z zagnieżdżonych w nim Wyborów. W tym celu należy je najpierw rozwinąć.</li>
 </ol>
 <h1>Struktura klas reprezentujących Menu</h1>
-<p>Lista klas w kolejności nadrzędności, tzn. klasa wymieniona jako pierwsza nie korzysta z żadnej z innych klas, jest za to wykorzystywana przez klasy nadrzędne, w szczególności przez klasę bezpośrednio nadrzędną, tzn. klasę o numerze 2.</p>
+<p>Klasy użyte do zaprojektowania Menu:</p>
 <ol type="1">
 <li><a class="el" href="classWybor.html">Wybor</a><ul>
 <li><a class="el" href="classJednoznaczny.html">Jednoznaczny</a></li>
@@ -104,12 +105,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 </li>
 <li><a class="el" href="classKolekcja.html">Kolekcja</a></li>
 <li><a class="el" href="classObsluga.html">Obsluga</a></li>
-<li><a class="el" href="classInterfejs.html">Interfejs</a> </li>
+<li><a class="el" href="classInterfejs.html">Interfejs</a></li>
 </ol>
+<h1>Metody wykorzystywane w interfejsie użytkownika</h1>
+<p>Użytkownik dysponuje wieloma metodami, pozwalającymi na swobodne poruszanie się po Menu i zarządzanie nim. Są to metody publiczne klasy <a class="el" href="classObsluga.html">Obsluga</a> - w sekcji tej klasy szczegółowo opisano działanie i parametry każdej z metod.</p>
+<h1>Sposób testowania</h1>
+<p>Za obsługę interfejsu tekstowego służącego do testowania programu odpowiada klasa <a class="el" href="classInterfejs.html">Interfejs</a> - szczegółowy opis klasy wraz z opisem jej metod publicznych znajduje się w osobnej sekcji poświęconej tej klasie.</p>
+<h2>Sposób 1 - od zera</h2>
+<p>Po uruchomieniu programu użytkownik zostaje poproszony o podanie nazwy Menu - zostanie utworzone pierwsze <a class="el" href="classPodmenu.html">Podmenu</a> o stopniu zagnieżdżenia 0. Następnie uzytkownik może poruszać się po Menu za pomocą klawiszy W (góra) i S (dół). Dodatkowe opcje są zależne od tego, czy kursos pokazuje na <a class="el" href="classPodmenu.html">Podmenu</a> czy Wybór <a class="el" href="classJednoznaczny.html">Jednoznaczny</a> i wszystkie możliwe do użycia skróty wraz z opisami są wypisane na ekranie bezpośrednio pod Menu. Taki sposób testowania umożliwia metoda publiczna klasy <a class="el" href="classInterfejs.html">Interfejs</a> Start().</p>
+<h2>Sposób 2 - bazując na stworzonym Menu</h2>
+<p>Program można również uruchomić dla stworzonego wcześniej w interfejsie użytkownika Menu. Wówczas użytkownik nie musi wprowadzać nazwy Menu - od razu można nawigować i zarządzać Menu w taki sam sposób, jak opisano dla sposobu 1. Taki sposób testowania umozliwia metoda publiczna klasy <a class="el" href="classInterfejs.html">Interfejs</a> Program(Obsluga &amp;M), gdzie obiekt M został wcześniej stworzony (i modyfikowany). </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano Pn, 16 sty 2017 22:51:10 dla Menu programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Cz, 19 sty 2017 07:29:18 dla Menu programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

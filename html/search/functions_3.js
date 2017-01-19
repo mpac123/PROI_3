@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kolekcja',['Kolekcja',['../classKolekcja.html#a69ee9233ae5b67dadc29bd8c038e017d',1,'Kolekcja']]]
+  ['start',['Start',['../classInterfejs.html#ab016a2fdc6ba2553378167d6a07f8ea3',1,'Interfejs']]]
 ];

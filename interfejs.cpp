@@ -1,5 +1,6 @@
 #include "interfejs.h"
 #include <cstring>
+#include <fstream>
 void Interfejs::Start()
 {
 	std::string s;
@@ -10,6 +11,8 @@ void Interfejs::Start()
 }
 void Interfejs::Program(Obsluga& M)
 {
+	std::ofstream file;
+	file.open("output.txt");
 	std::string s;
 	do
 	{
@@ -19,7 +22,7 @@ void Interfejs::Program(Obsluga& M)
 		Podmenu* wsk_menu;
 		if((wsk_menu=dynamic_cast<Podmenu*>(wsk_wyb))==NULL)
 		{
-			std::cout << "[S] dol [W] gora [D] przypisz funkcje\n[space] wykonaj [X] usun [exit] wyjdz\n";
+			std::cout << "[S] dol [W] gora [D] przypisz funkcje\n[D] wykonaj [X] usun [exit] wyjdz\n";
 			std::cin >> s;
 			ZarzadzajWyboremJedn(s,M);
 		}
@@ -30,6 +33,8 @@ void Interfejs::Program(Obsluga& M)
 			ZarzadzajPodmenu(s,M);
 		}
 	}while(s!="exit");
+	file << M;
+	file.close();
 }
 
 void Interfejs::ZarzadzajPodmenu(std::string s, Obsluga& M)

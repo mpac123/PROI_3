@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -109,8 +109,6 @@ Metody publiczne</h2></td></tr>
 <tr class="separator:a5567d2685b8ca89fe1d6593f0826a653"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36f1c6f4841b40c6d44fd1fc3fd2449b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObsluga.html#a36f1c6f4841b40c6d44fd1fc3fd2449b">Wstecz</a> ()</td></tr>
 <tr class="separator:a36f1c6f4841b40c6d44fd1fc3fd2449b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5c3d436c5b2daa909d9edf6a4e288818"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObsluga.html#a5c3d436c5b2daa909d9edf6a4e288818">Wypisz</a> (std::ostream &amp;ekran)</td></tr>
-<tr class="separator:a5c3d436c5b2daa909d9edf6a4e288818"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add7a400f68afe5e0c049855ed428fd3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObsluga.html#add7a400f68afe5e0c049855ed428fd3a">Zwin</a> ()</td></tr>
 <tr class="separator:add7a400f68afe5e0c049855ed428fd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b625d79bab85d07a4da24bc105e312d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classObsluga.html#a3b625d79bab85d07a4da24bc105e312d">Rozwin</a> ()</td></tr>
@@ -128,8 +126,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 <tr class="separator:aeac69cdc1820ab17cd012468f3f0a85c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
-<div class="textblock"><p>Klasa obsługująca obiekt klasy <a class="el" href="classKolekcja.html">Kolekcja</a>. Potrafi modyfikować obiekty klasy Wybór, przechowywane przez atrybut klasy <a class="el" href="classKolekcja.html">Kolekcja</a>. Umożliwia wykonywanie operacji na Kolekcji - dodawanie Wyborów, zwijanie i rozwijanie <a class="el" href="classPodmenu.html">Podmenu</a> oraz swobodne poruszanie się po kolejnych Wyborach, z uwzględnieniem omijania Wyborów ukrytych.</p>
-<p>Klasa ma charakter uniwersalny, nie narzuca żadnego konkretnego interfejsu użytkownika. Z powodzeniem jej metody mogą być wykorzystywane przy tworzeniu różnych interfejsów. </p>
+<div class="textblock"><p>Klasa obsługująca obiekt klasy <a class="el" href="classKolekcja.html">Kolekcja</a>. Potrafi modyfikować obiekty klasy Wybór, przechowywane przez atrybut klasy <a class="el" href="classKolekcja.html">Kolekcja</a>. Umożliwia wykonywanie operacji na Kolekcji - dodawanie Wyborów, zwijanie i rozwijanie <a class="el" href="classPodmenu.html">Podmenu</a> oraz swobodne poruszanie się po kolejnych Wyborach, z uwzględnieniem omijania Wyborów ukrytych. </p>
 </div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
 <a class="anchor" id="a5567d2685b8ca89fe1d6593f0826a653"></a>
 <div class="memitem">
@@ -244,7 +241,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Usuwa Wybór, na który aktualnie wskazuje Kursor wraz ze wszystkimi Wyborami zagnieżdżonymi. Kursor na koniec jest ustawiony na pierwszym kolejnym niezagnieżdżonym obiekcie. </p>
+<p>Usuwa Wybór, na który aktualnie wskazuje Kursor wraz ze wszystkimi Wyborami zagnieżdżonymi. Kursor na koniec jest ustawiony na poprzednim obiekcie. </p>
 
 </div>
 </div>
@@ -280,23 +277,6 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 
 </div>
 </div>
-<a class="anchor" id="a5c3d436c5b2daa909d9edf6a4e288818"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Obsluga::Wypisz </td>
-          <td>(</td>
-          <td class="paramtype">std::ostream &amp;&#160;</td>
-          <td class="paramname"><em>ekran</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Metoda wykorzystywana przez przeładowany operator&lt;&lt; </p>
-
-</div>
-</div>
 <a class="anchor" id="add7a400f68afe5e0c049855ed428fd3a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -316,7 +296,7 @@ std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operato
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano Pn, 16 sty 2017 22:51:10 dla Menu programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Cz, 19 sty 2017 07:29:19 dla Menu programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

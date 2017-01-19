@@ -23,8 +23,6 @@ void \hyperlink{classObsluga_a5567d2685b8ca89fe1d6593f0826a653}{Dalej} ()
 \item 
 void \hyperlink{classObsluga_a36f1c6f4841b40c6d44fd1fc3fd2449b}{Wstecz} ()
 \item 
-void \hyperlink{classObsluga_a5c3d436c5b2daa909d9edf6a4e288818}{Wypisz} (std\-::ostream \&ekran)
-\item 
 void \hyperlink{classObsluga_add7a400f68afe5e0c049855ed428fd3a}{Zwin} ()
 \item 
 void \hyperlink{classObsluga_a3b625d79bab85d07a4da24bc105e312d}{Rozwin} ()
@@ -43,9 +41,7 @@ void \hyperlink{classObsluga_aed45a6c9be358bcbce191617e6e04be7}{Wykonaj} ()
 
 
 \subsection{Opis szczegółowy}
-Klasa obsługująca obiekt klasy \hyperlink{classKolekcja}{Kolekcja}. Potrafi modyfikować obiekty klasy Wybór, przechowywane przez atrybut klasy \hyperlink{classKolekcja}{Kolekcja}. Umożliwia wykonywanie operacji na Kolekcji -\/ dodawanie Wyborów, zwijanie i rozwijanie \hyperlink{classPodmenu}{Podmenu} oraz swobodne poruszanie się po kolejnych Wyborach, z uwzględnieniem omijania Wyborów ukrytych.
-
-Klasa ma charakter uniwersalny, nie narzuca żadnego konkretnego interfejsu użytkownika. Z powodzeniem jej metody mogą być wykorzystywane przy tworzeniu różnych interfejsów. 
+Klasa obsługująca obiekt klasy \hyperlink{classKolekcja}{Kolekcja}. Potrafi modyfikować obiekty klasy Wybór, przechowywane przez atrybut klasy \hyperlink{classKolekcja}{Kolekcja}. Umożliwia wykonywanie operacji na Kolekcji -\/ dodawanie Wyborów, zwijanie i rozwijanie \hyperlink{classPodmenu}{Podmenu} oraz swobodne poruszanie się po kolejnych Wyborach, z uwzględnieniem omijania Wyborów ukrytych. 
 
 \subsection{Dokumentacja funkcji składowych}
 \hypertarget{classObsluga_a5567d2685b8ca89fe1d6593f0826a653}{\index{Obsluga@{Obsluga}!Dalej@{Dalej}}
@@ -105,7 +101,7 @@ Metoda pokazuje wszystkie elementy Kolekcji zagnieżdżone w \hyperlink{classPod
 {}
 \end{DoxyParamCaption}
 )}}\label{classObsluga_af4498067cfb12688c9b395a9ec58cd4a}
-Usuwa Wybór, na który aktualnie wskazuje Kursor wraz ze wszystkimi Wyborami zagnieżdżonymi. Kursor na koniec jest ustawiony na pierwszym kolejnym niezagnieżdżonym obiekcie. \hypertarget{classObsluga_a36f1c6f4841b40c6d44fd1fc3fd2449b}{\index{Obsluga@{Obsluga}!Wstecz@{Wstecz}}
+Usuwa Wybór, na który aktualnie wskazuje Kursor wraz ze wszystkimi Wyborami zagnieżdżonymi. Kursor na koniec jest ustawiony na poprzednim obiekcie. \hypertarget{classObsluga_a36f1c6f4841b40c6d44fd1fc3fd2449b}{\index{Obsluga@{Obsluga}!Wstecz@{Wstecz}}
 \index{Wstecz@{Wstecz}!Obsluga@{Obsluga}}
 \subsubsection[{Wstecz}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Wstecz (
 \begin{DoxyParamCaption}
@@ -119,14 +115,7 @@ Przesuwa kursor na poprzedni element listy Zbior\-Wyborow. Uwzględnia fakt, że
 {}
 \end{DoxyParamCaption}
 )}}\label{classObsluga_aed45a6c9be358bcbce191617e6e04be7}
-Metoda wywoływana dla obiektu klasy \hyperlink{classJednoznaczny}{Jednoznaczny} (dla każdego innego zgłasza wyjątek). Wywołuje funkcję przypisaną do Wyboru Jednoznacznego pokazywanego przez Kursor. Jeżeli funkcja nie została jeszcze przypisana, zgłasza wyjątek. \hypertarget{classObsluga_a5c3d436c5b2daa909d9edf6a4e288818}{\index{Obsluga@{Obsluga}!Wypisz@{Wypisz}}
-\index{Wypisz@{Wypisz}!Obsluga@{Obsluga}}
-\subsubsection[{Wypisz}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Wypisz (
-\begin{DoxyParamCaption}
-\item[{std\-::ostream \&}]{ekran}
-\end{DoxyParamCaption}
-)}}\label{classObsluga_a5c3d436c5b2daa909d9edf6a4e288818}
-Metoda wykorzystywana przez przeładowany operator$<$$<$ \hypertarget{classObsluga_add7a400f68afe5e0c049855ed428fd3a}{\index{Obsluga@{Obsluga}!Zwin@{Zwin}}
+Metoda wywoływana dla obiektu klasy \hyperlink{classJednoznaczny}{Jednoznaczny} (dla każdego innego zgłasza wyjątek). Wywołuje funkcję przypisaną do Wyboru Jednoznacznego pokazywanego przez Kursor. Jeżeli funkcja nie została jeszcze przypisana, zgłasza wyjątek. \hypertarget{classObsluga_add7a400f68afe5e0c049855ed428fd3a}{\index{Obsluga@{Obsluga}!Zwin@{Zwin}}
 \index{Zwin@{Zwin}!Obsluga@{Obsluga}}
 \subsubsection[{Zwin}]{\setlength{\rightskip}{0pt plus 5cm}void Obsluga\-::\-Zwin (
 \begin{DoxyParamCaption}

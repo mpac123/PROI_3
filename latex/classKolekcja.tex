@@ -8,7 +8,8 @@
 \subsection*{Metody publiczne}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classKolekcja_a69ee9233ae5b67dadc29bd8c038e017d}{Kolekcja} (std\-::string s)
+\hypertarget{classKolekcja_a69ee9233ae5b67dadc29bd8c038e017d}{{\bfseries Kolekcja} (std\-::string s)}\label{classKolekcja_a69ee9233ae5b67dadc29bd8c038e017d}
+
 \end{DoxyCompactItemize}
 \subsection*{Przyjaciele}
 \begin{DoxyCompactItemize}
@@ -19,18 +20,6 @@
 
 
 \subsection{Opis szczegółowy}
-Klasa zaprzyjaźniona z klasą Wybór i klasami pochodnymi, obsługująca obiekty tej klasy. 
+Klasa zaprzyjaźniona z klasą Wybór i klasami pochodnymi, obsługująca obiekty tej klasy. Wybory są przechowywane w liście Zbior\-Wyborow.
 
-\subsection{Dokumentacja konstruktora i destruktora}
-\hypertarget{classKolekcja_a69ee9233ae5b67dadc29bd8c038e017d}{\index{Kolekcja@{Kolekcja}!Kolekcja@{Kolekcja}}
-\index{Kolekcja@{Kolekcja}!Kolekcja@{Kolekcja}}
-\subsubsection[{Kolekcja}]{\setlength{\rightskip}{0pt plus 5cm}Kolekcja\-::\-Kolekcja (
-\begin{DoxyParamCaption}
-\item[{std\-::string}]{s}
-\end{DoxyParamCaption}
-)}}\label{classKolekcja_a69ee9233ae5b67dadc29bd8c038e017d}
-Konstruktor obiektu typu \hyperlink{classKolekcja}{Kolekcja}. Tworzy nowy obiekt klasy \hyperlink{classPodmenu}{Podmenu}, zgodnie z założeniem, że każda \hyperlink{classKolekcja}{Kolekcja} musi posiadać jeden obiekt klasy \hyperlink{classPodmenu}{Podmenu}, o stopniu zagnieżdżenia 0, znajdujący się na początku listy Zbiór\-Wyborow. 
-\begin{DoxyParams}{Parametry}
-{\em s} & Nazwa Kolekcji, będąca jednocześnie nazwą obiektu \hyperlink{classPodmenu}{Podmenu} o stopniu zagnieżdżenia 0\\
-\hline
-\end{DoxyParams}
+Zgodnie z założeniem, że każda \hyperlink{classKolekcja}{Kolekcja} musi posiadać jeden obiekt klasy \hyperlink{classPodmenu}{Podmenu}, jej konstruktor tworzy nowy obiekt klasy \hyperlink{classPodmenu}{Podmenu} o stopniu zagnieżdżenia 0 i dodaje go na początek listy Zbiór\-Wyborow. Nazwa tego obiektu klasy \hyperlink{classPodmenu}{Podmenu} jest jednocześnie nazwą całej kolekcji. 

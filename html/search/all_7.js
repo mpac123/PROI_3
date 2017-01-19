@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['obsluga',['Obsluga',['../classObsluga.html',1,'Obsluga'],['../classWybor.html#aaba4100c363553c323b55344e224e15d',1,'Wybor::Obsluga()']]]
+  ['start',['Start',['../classInterfejs.html#ab016a2fdc6ba2553378167d6a07f8ea3',1,'Interfejs']]]
 ];

@@ -1,0 +1,14 @@
+| Meble |
+  | Do kuchni |
+    -> Stolnice: funkcja nieaktywna
+    -> Blaty kuchenne: funkcja nieaktywna
+  | Do lazienki |
+    -> Kosze na bielizne: funkcja nieaktywna
+    -> Lustra: funkcja nieaktywna
+  | Do pokoju |
+    | Dla nastolatka |
+      | Biurka |
+        -> Blaty: funkcja nieaktywna ***
+        -> Zabudowane: funkcja nieaktywna
+    | Dla dziecka 
+

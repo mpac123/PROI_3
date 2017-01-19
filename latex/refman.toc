@@ -1,36 +1,27 @@
 \contentsline {chapter}{\numberline {1}Informacje o projekcie}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Indeks hierarchiczny}{3}{chapter.2}
-\contentsline {section}{\numberline {2.1}Hierarchia klas}{3}{section.2.1}
-\contentsline {chapter}{\numberline {3}Indeks klas}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Lista klas}{5}{section.3.1}
-\contentsline {chapter}{\numberline {4}Dokumentacja klas}{7}{chapter.4}
-\contentsline {section}{\numberline {4.1}Dokumentacja klasy Interfejs}{7}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{7}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Dokumentacja funkcji sk\IeC {\l }adowych}{7}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}Program}{7}{subsubsection.4.1.2.1}
-\contentsline {subsubsection}{\numberline {4.1.2.2}Start}{7}{subsubsection.4.1.2.2}
-\contentsline {section}{\numberline {4.2}Dokumentacja klasy Jednoznaczny}{7}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{8}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Dokumentacja klasy Kolekcja}{8}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{8}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Dokumentacja konstruktora i destruktora}{8}{subsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Kolekcja}{8}{subsubsection.4.3.2.1}
-\contentsline {section}{\numberline {4.4}Dokumentacja klasy Obsluga}{9}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{9}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Dokumentacja funkcji sk\IeC {\l }adowych}{9}{subsection.4.4.2}
-\contentsline {subsubsection}{\numberline {4.4.2.1}Dalej}{9}{subsubsection.4.4.2.1}
-\contentsline {subsubsection}{\numberline {4.4.2.2}Dodaj\discretionary {-}{}{}Menu}{9}{subsubsection.4.4.2.2}
-\contentsline {subsubsection}{\numberline {4.4.2.3}Dodaj\discretionary {-}{}{}Wybor\discretionary {-}{}{}Jedn}{10}{subsubsection.4.4.2.3}
-\contentsline {subsubsection}{\numberline {4.4.2.4}Przypisz\discretionary {-}{}{}Funkcje}{10}{subsubsection.4.4.2.4}
-\contentsline {subsubsection}{\numberline {4.4.2.5}Rozwin}{10}{subsubsection.4.4.2.5}
-\contentsline {subsubsection}{\numberline {4.4.2.6}Usun}{10}{subsubsection.4.4.2.6}
-\contentsline {subsubsection}{\numberline {4.4.2.7}Wstecz}{10}{subsubsection.4.4.2.7}
-\contentsline {subsubsection}{\numberline {4.4.2.8}Wykonaj}{10}{subsubsection.4.4.2.8}
-\contentsline {subsubsection}{\numberline {4.4.2.9}Wypisz}{10}{subsubsection.4.4.2.9}
-\contentsline {subsubsection}{\numberline {4.4.2.10}Zwin}{10}{subsubsection.4.4.2.10}
-\contentsline {section}{\numberline {4.5}Dokumentacja klasy Podmenu}{11}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{11}{subsection.4.5.1}
-\contentsline {section}{\numberline {4.6}Dokumentacja klasy Wybor}{11}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{12}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Dokumentacja atrybut\IeC {\'o}w sk\IeC {\l }adowych}{12}{subsection.4.6.2}
-\contentsline {subsubsection}{\numberline {4.6.2.1}stopien\discretionary {-}{}{}Zagniezdzenia}{12}{subsubsection.4.6.2.1}
+\contentsline {chapter}{\numberline {2}Dokumentacja klas}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Dokumentacja klasy Wybor}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{4}{subsection.2.1.1}
+\contentsline {section}{\numberline {2.2}Dokumentacja klasy Podmenu}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{4}{subsection.2.2.1}
+\contentsline {section}{\numberline {2.3}Dokumentacja klasy Jednoznaczny}{4}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{5}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Dokumentacja klasy Kolekcja}{5}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{5}{subsection.2.4.1}
+\contentsline {section}{\numberline {2.5}Dokumentacja klasy Obsluga}{5}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{6}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Dokumentacja funkcji sk\IeC {\l }adowych}{6}{subsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.2.1}Dalej}{6}{subsubsection.2.5.2.1}
+\contentsline {subsubsection}{\numberline {2.5.2.2}Dodaj\discretionary {-}{}{}Menu}{6}{subsubsection.2.5.2.2}
+\contentsline {subsubsection}{\numberline {2.5.2.3}Dodaj\discretionary {-}{}{}Wybor\discretionary {-}{}{}Jedn}{6}{subsubsection.2.5.2.3}
+\contentsline {subsubsection}{\numberline {2.5.2.4}Przypisz\discretionary {-}{}{}Funkcje}{6}{subsubsection.2.5.2.4}
+\contentsline {subsubsection}{\numberline {2.5.2.5}Rozwin}{6}{subsubsection.2.5.2.5}
+\contentsline {subsubsection}{\numberline {2.5.2.6}Usun}{6}{subsubsection.2.5.2.6}
+\contentsline {subsubsection}{\numberline {2.5.2.7}Wstecz}{7}{subsubsection.2.5.2.7}
+\contentsline {subsubsection}{\numberline {2.5.2.8}Wykonaj}{7}{subsubsection.2.5.2.8}
+\contentsline {subsubsection}{\numberline {2.5.2.9}Zwin}{7}{subsubsection.2.5.2.9}
+\contentsline {section}{\numberline {2.6}Dokumentacja klasy Interfejs}{7}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Opis szczeg\IeC {\'o}\IeC {\l }owy}{7}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Dokumentacja funkcji sk\IeC {\l }adowych}{7}{subsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.2.1}Program}{7}{subsubsection.2.6.2.1}
+\contentsline {subsubsection}{\numberline {2.6.2.2}Start}{7}{subsubsection.2.6.2.2}

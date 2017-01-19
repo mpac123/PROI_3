@@ -3,9 +3,14 @@
 /**
  * Klasa reprezentująca interfejs użytkownika. Menu wyświetlane jest 
  * w terminalu w następujący umówny sposób:
- * - Poziom zagnieżdżenia reprezentowany jest ilością spacji
- * - Pozycja Kursora pokazywana jest symbolem ***
+ * - Poziom zagnieżdżenia reprezentowany jest odpowiednim wcięciem.
+ * - Pozycja Kursora pokazywana jest symbolem ***.
  * - Lista dostępnych poleceń wyświetlana jest bezpośrednio pod Menu.
+ * - Podmenu reprezentowane jest zapisem: <b>| Nazwa podmenu </b>, gdy menu
+ * nie posiada zagnieżdżonych obiektów lub <b>| Nazwa podmenu |</b>, gdy posiada zagnieżdżone
+ * obiekty (w szczególności można je rozwinąć).
+ * - Wybór jednoznaczny reprezentowany jest zapisem: <b>-> Nazwa wyboru</b>. Jeżeli do wyboru
+ * nie została jeszcze przypisana żadna funkcja, po dwukropku znajduje się dopisek <b>funkcja nieaktywna</b>.
  */
 #include "obsluga.h"
 class Interfejs

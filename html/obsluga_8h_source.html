@@ -69,7 +69,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -87,51 +87,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _OBSLUGA_H_</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;kolekcja.h&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classObsluga.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classObsluga.html">Obsluga</a></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classInterfejs.html">Interfejs</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classObsluga.html">Obsluga</a>(std::string s);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#aaf91f84ea408e2ee478009ff28d0719c">DodajMenu</a>(std::string s);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a141f1c29476498fecf4c74983c60f107">DodajWyborJedn</a>(std::string s);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a79ac7b11058423a625c971688d012a5c">PrzypiszFunkcje</a>(<span class="keywordtype">int</span> n);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#af4498067cfb12688c9b395a9ec58cd4a">Usun</a>();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a5567d2685b8ca89fe1d6593f0826a653">Dalej</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a36f1c6f4841b40c6d44fd1fc3fd2449b">Wstecz</a>();</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a5c3d436c5b2daa909d9edf6a4e288818">Wypisz</a>(std::ostream &amp;ekran);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#add7a400f68afe5e0c049855ed428fd3a">Zwin</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a3b625d79bab85d07a4da24bc105e312d">Rozwin</a>();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#aed45a6c9be358bcbce191617e6e04be7">Wykonaj</a>();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream &amp;ekran, <a class="code" href="classObsluga.html">Obsluga</a> &amp;m);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">//void Drukuj();</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classObsluga.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classObsluga.html">Obsluga</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classInterfejs.html">Interfejs</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classObsluga.html">Obsluga</a>(std::string s);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#aaf91f84ea408e2ee478009ff28d0719c">DodajMenu</a>(std::string s);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a141f1c29476498fecf4c74983c60f107">DodajWyborJedn</a>(std::string s);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a79ac7b11058423a625c971688d012a5c">PrzypiszFunkcje</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#af4498067cfb12688c9b395a9ec58cd4a">Usun</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a5567d2685b8ca89fe1d6593f0826a653">Dalej</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a36f1c6f4841b40c6d44fd1fc3fd2449b">Wstecz</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#add7a400f68afe5e0c049855ed428fd3a">Zwin</a>();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#a3b625d79bab85d07a4da24bc105e312d">Rozwin</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classObsluga.html#aed45a6c9be358bcbce191617e6e04be7">Wykonaj</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keyword">friend</span> std::ostream&amp; operator&lt;&lt;(std::ostream &amp;ekran, <a class="code" href="classObsluga.html">Obsluga</a> &amp;m);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">//void Drukuj();</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="classKolekcja.html">Kolekcja</a> Menu;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    kursor Kursor;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="classWybor.html">Wybor</a>* wsk_kursor() {<span class="keywordflow">return</span> *Kursor;};</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> Wypisz(std::ostream &amp;ekran);</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="classKolekcja.html">Kolekcja</a> Menu;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    kursor Kursor;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="classWybor.html">Wybor</a>* wsk_kursor() {<span class="keywordflow">return</span> *Kursor;};</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="ttc" id="classObsluga_html_aed45a6c9be358bcbce191617e6e04be7"><div class="ttname"><a href="classObsluga.html#aed45a6c9be358bcbce191617e6e04be7">Obsluga::Wykonaj</a></div><div class="ttdeci">void Wykonaj()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:198</div></div>
-<div class="ttc" id="classObsluga_html"><div class="ttname"><a href="classObsluga.html">Obsluga</a></div><div class="ttdef"><b>Definition:</b> obsluga.h:14</div></div>
-<div class="ttc" id="classWybor_html"><div class="ttname"><a href="classWybor.html">Wybor</a></div><div class="ttdef"><b>Definition:</b> wybor.h:10</div></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;};</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="ttc" id="classObsluga_html_aed45a6c9be358bcbce191617e6e04be7"><div class="ttname"><a href="classObsluga.html#aed45a6c9be358bcbce191617e6e04be7">Obsluga::Wykonaj</a></div><div class="ttdeci">void Wykonaj()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:207</div></div>
+<div class="ttc" id="classObsluga_html"><div class="ttname"><a href="classObsluga.html">Obsluga</a></div><div class="ttdef"><b>Definition:</b> obsluga.h:12</div></div>
+<div class="ttc" id="classWybor_html"><div class="ttname"><a href="classWybor.html">Wybor</a></div><div class="ttdef"><b>Definition:</b> wybor.h:12</div></div>
 <div class="ttc" id="classObsluga_html_af4498067cfb12688c9b395a9ec58cd4a"><div class="ttname"><a href="classObsluga.html#af4498067cfb12688c9b395a9ec58cd4a">Obsluga::Usun</a></div><div class="ttdeci">void Usun()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:90</div></div>
-<div class="ttc" id="classInterfejs_html"><div class="ttname"><a href="classInterfejs.html">Interfejs</a></div><div class="ttdef"><b>Definition:</b> interfejs.h:11</div></div>
+<div class="ttc" id="classInterfejs_html"><div class="ttname"><a href="classInterfejs.html">Interfejs</a></div><div class="ttdef"><b>Definition:</b> interfejs.h:16</div></div>
 <div class="ttc" id="classObsluga_html_a141f1c29476498fecf4c74983c60f107"><div class="ttname"><a href="classObsluga.html#a141f1c29476498fecf4c74983c60f107">Obsluga::DodajWyborJedn</a></div><div class="ttdeci">void DodajWyborJedn(std::string s)</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:39</div></div>
-<div class="ttc" id="classObsluga_html_a5c3d436c5b2daa909d9edf6a4e288818"><div class="ttname"><a href="classObsluga.html#a5c3d436c5b2daa909d9edf6a4e288818">Obsluga::Wypisz</a></div><div class="ttdeci">void Wypisz(std::ostream &amp;ekran)</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:184</div></div>
-<div class="ttc" id="classObsluga_html_add7a400f68afe5e0c049855ed428fd3a"><div class="ttname"><a href="classObsluga.html#add7a400f68afe5e0c049855ed428fd3a">Obsluga::Zwin</a></div><div class="ttdeci">void Zwin()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:125</div></div>
+<div class="ttc" id="classObsluga_html_add7a400f68afe5e0c049855ed428fd3a"><div class="ttname"><a href="classObsluga.html#add7a400f68afe5e0c049855ed428fd3a">Obsluga::Zwin</a></div><div class="ttdeci">void Zwin()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:134</div></div>
 <div class="ttc" id="classObsluga_html_a79ac7b11058423a625c971688d012a5c"><div class="ttname"><a href="classObsluga.html#a79ac7b11058423a625c971688d012a5c">Obsluga::PrzypiszFunkcje</a></div><div class="ttdeci">void PrzypiszFunkcje(int n)</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:51</div></div>
-<div class="ttc" id="classObsluga_html_a3b625d79bab85d07a4da24bc105e312d"><div class="ttname"><a href="classObsluga.html#a3b625d79bab85d07a4da24bc105e312d">Obsluga::Rozwin</a></div><div class="ttdeci">void Rozwin()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:150</div></div>
+<div class="ttc" id="classObsluga_html_a3b625d79bab85d07a4da24bc105e312d"><div class="ttname"><a href="classObsluga.html#a3b625d79bab85d07a4da24bc105e312d">Obsluga::Rozwin</a></div><div class="ttdeci">void Rozwin()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:159</div></div>
 <div class="ttc" id="classObsluga_html_a5567d2685b8ca89fe1d6593f0826a653"><div class="ttname"><a href="classObsluga.html#a5567d2685b8ca89fe1d6593f0826a653">Obsluga::Dalej</a></div><div class="ttdeci">void Dalej()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:80</div></div>
-<div class="ttc" id="classKolekcja_html"><div class="ttname"><a href="classKolekcja.html">Kolekcja</a></div><div class="ttdef"><b>Definition:</b> kolekcja.h:12</div></div>
+<div class="ttc" id="classKolekcja_html"><div class="ttname"><a href="classKolekcja.html">Kolekcja</a></div><div class="ttdef"><b>Definition:</b> kolekcja.h:17</div></div>
 <div class="ttc" id="classObsluga_html_aaf91f84ea408e2ee478009ff28d0719c"><div class="ttname"><a href="classObsluga.html#aaf91f84ea408e2ee478009ff28d0719c">Obsluga::DodajMenu</a></div><div class="ttdeci">void DodajMenu(std::string s)</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:27</div></div>
-<div class="ttc" id="classObsluga_html_a36f1c6f4841b40c6d44fd1fc3fd2449b"><div class="ttname"><a href="classObsluga.html#a36f1c6f4841b40c6d44fd1fc3fd2449b">Obsluga::Wstecz</a></div><div class="ttdeci">void Wstecz()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:115</div></div>
+<div class="ttc" id="classObsluga_html_a36f1c6f4841b40c6d44fd1fc3fd2449b"><div class="ttname"><a href="classObsluga.html#a36f1c6f4841b40c6d44fd1fc3fd2449b">Obsluga::Wstecz</a></div><div class="ttdeci">void Wstecz()</div><div class="ttdef"><b>Definition:</b> obsluga.cpp:124</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano Pn, 16 sty 2017 22:51:10 dla Menu programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Cz, 19 sty 2017 07:29:18 dla Menu programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

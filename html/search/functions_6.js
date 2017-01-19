@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rozwin',['Rozwin',['../classObsluga.html#a3b625d79bab85d07a4da24bc105e312d',1,'Obsluga']]]
+  ['zwin',['Zwin',['../classObsluga.html#add7a400f68afe5e0c049855ed428fd3a',1,'Obsluga']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nadajstopienzagniezdzenia',['NadajStopienZagniezdzenia',['../classWybor.html#a3257df3c35728ec264a51dce3ac28f55',1,'Wybor']]]
+  ['rozwin',['Rozwin',['../classObsluga.html#a3b625d79bab85d07a4da24bc105e312d',1,'Obsluga']]]
 ];

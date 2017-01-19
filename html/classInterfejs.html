@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Zmienne</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Przyjaciele</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Strony</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Klasy</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Funkcje</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Strony</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -101,9 +101,11 @@ Metody publiczne</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
 <div class="textblock"><p>Klasa reprezentująca interfejs użytkownika. Menu wyświetlane jest w terminalu w następujący umówny sposób:</p>
 <ul>
-<li>Poziom zagnieżdżenia reprezentowany jest ilością spacji</li>
-<li>Pozycja Kursora pokazywana jest symbolem ***</li>
-<li>Lista dostępnych poleceń wyświetlana jest bezpośrednio pod Menu. </li>
+<li>Poziom zagnieżdżenia reprezentowany jest odpowiednim wcięciem.</li>
+<li>Pozycja Kursora pokazywana jest symbolem ***.</li>
+<li>Lista dostępnych poleceń wyświetlana jest bezpośrednio pod Menu.</li>
+<li><a class="el" href="classPodmenu.html">Podmenu</a> reprezentowane jest zapisem: <b>| Nazwa podmenu </b>, gdy menu nie posiada zagnieżdżonych obiektów lub <b>| Nazwa podmenu |</b>, gdy posiada zagnieżdżone obiekty (w szczególności można je rozwinąć).</li>
+<li>Wybór jednoznaczny reprezentowany jest zapisem: <b>-&gt; Nazwa wyboru</b>. Jeżeli do wyboru nie została jeszcze przypisana żadna funkcja, po dwukropku znajduje się dopisek <b>funkcja nieaktywna</b>. </li>
 </ul>
 </div><h2 class="groupheader">Dokumentacja funkcji składowych</h2>
 <a class="anchor" id="a46d175ac6f4e02e5e60fea8bb54c98b7"></a>
@@ -142,7 +144,7 @@ Metody publiczne</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Wygenerowano Pn, 16 sty 2017 22:51:10 dla Menu programem &#160;<a href="http://www.doxygen.org/index.html">
+Wygenerowano Cz, 19 sty 2017 07:29:18 dla Menu programem &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

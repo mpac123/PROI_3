@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['rozwin',['Rozwin',['../classObsluga.html#a3b625d79bab85d07a4da24bc105e312d',1,'Obsluga']]]
+  ['wstecz',['Wstecz',['../classObsluga.html#a36f1c6f4841b40c6d44fd1fc3fd2449b',1,'Obsluga']]],
+  ['wybor',['Wybor',['../classWybor.html',1,'']]],
+  ['wykonaj',['Wykonaj',['../classObsluga.html#aed45a6c9be358bcbce191617e6e04be7',1,'Obsluga']]]
 ];

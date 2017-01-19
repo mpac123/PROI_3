@@ -2,14 +2,12 @@
 #define _OBSLUGA_H_
 
 #include "kolekcja.h"
+
 /**
  * Klasa obsługująca obiekt klasy Kolekcja. Potrafi modyfikować obiekty klasy Wybór,
  * przechowywane przez atrybut klasy Kolekcja. Umożliwia wykonywanie operacji na Kolekcji - dodawanie
  * Wyborów, zwijanie i rozwijanie Podmenu oraz swobodne poruszanie się po kolejnych Wyborach,
  * z uwzględnieniem omijania Wyborów ukrytych.
- * 
- * Klasa ma charakter uniwersalny, nie narzuca żadnego konkretnego interfejsu użytkownika.
- * Z powodzeniem jej metody mogą być wykorzystywane przy tworzeniu różnych interfejsów.
  */
 class Obsluga
 {
@@ -34,7 +32,7 @@ public:
 	void PrzypiszFunkcje(int n);
 	/**
 	 * Usuwa Wybór, na który aktualnie wskazuje Kursor wraz ze wszystkimi Wyborami zagnieżdżonymi.
-	 * Kursor na koniec jest ustawiony na pierwszym kolejnym niezagnieżdżonym obiekcie.
+	 * Kursor na koniec jest ustawiony na poprzednim obiekcie.
 	 */
 	void Usun();
 	/**
@@ -47,10 +45,6 @@ public:
 	 * być ukryta i pomija je. Gdy Kursor pokazuje na pierwszy element, przesuwa go na koniec.
 	 */
 	void Wstecz();
-	/**
-	 * Metoda wykorzystywana przez przeładowany operator<<
-	 */
-	void Wypisz(std::ostream &ekran);
 	/**
 	 * Metoda ukrywa wszystkie elementy Kolekcji zagnieżdżone w Podmenu.
 	 * Jeżeli wywołane dla typu innego niż Podmenu, zgłasza wyjątek.
@@ -76,6 +70,7 @@ public:
 	Kolekcja Menu;
 	kursor Kursor;
 	Wybor* wsk_kursor() {return *Kursor;};
+	void Wypisz(std::ostream &ekran);
 	
 };
 

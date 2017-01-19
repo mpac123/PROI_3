@@ -105,11 +105,20 @@ void Obsluga::Usun()
 		{
 			Kursor=Menu.ZbiorWyborow.begin();
 		}
+		
 	}
 	catch(const char* s)
 	{
 		std::cerr << s << std::endl;
 	}
+	
+	int n=(*Kursor)->JakiStopienZagniezdzenia();
+	Wstecz();
+	Wybor* wsk_wyb=(*Kursor);
+	Podmenu* wsk_menu;
+	if((wsk_menu=dynamic_cast<Podmenu*>(wsk_wyb))!=NULL)
+		if (n<=(*Kursor)->JakiStopienZagniezdzenia())
+			wsk_menu->czyPusty=true;
 }
 
 void Obsluga::Wstecz()
